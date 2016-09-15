@@ -20,6 +20,7 @@
 		5CAA396E1D88A4EA00893D90 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA39661D88A4EA00893D90 /* AFURLRequestSerialization.m */; };
 		5CAA396F1D88A4EA00893D90 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA39681D88A4EA00893D90 /* AFURLResponseSerialization.m */; };
 		5CAA39701D88A4EA00893D90 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA396A1D88A4EA00893D90 /* AFURLSessionManager.m */; };
+		5CAA39771D8B08C400893D90 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA39761D8B08C400893D90 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 /* Begin PBXFileReference section */
 		5CAA392A1D88926800893D90 /* Web Service Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Service Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAA392D1D88926800893D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CAA392F1D88926800893D90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CAA392F1D88926800893D90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Web Service Example/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5CAA39321D88926800893D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CAA39341D88926800893D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CAA39371D88926800893D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		5CAA39691D88A4EA00893D90 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		5CAA396A1D88A4EA00893D90 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		5CAA39711D88A69100893D90 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		5CAA39761D8B08C400893D90 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				5CAA39341D88926800893D90 /* Assets.xcassets */,
 				5CAA39361D88926800893D90 /* LaunchScreen.storyboard */,
 				5CAA39391D88926800893D90 /* Info.plist */,
+				5CAA39761D8B08C400893D90 /* SwiftyJSON.swift */,
 			);
 			path = "Web Service Example";
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				5CAA39301D88926800893D90 /* ViewController.swift in Sources */,
 				5CAA396E1D88A4EA00893D90 /* AFURLRequestSerialization.m in Sources */,
 				5CAA396C1D88A4EA00893D90 /* AFNetworkReachabilityManager.m in Sources */,
+				5CAA39771D8B08C400893D90 /* SwiftyJSON.swift in Sources */,
 				5CAA396F1D88A4EA00893D90 /* AFURLResponseSerialization.m in Sources */,
 				5CAA392E1D88926800893D90 /* AppDelegate.swift in Sources */,
 			);

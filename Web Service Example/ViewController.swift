@@ -8,6 +8,7 @@
 //
 
 import UIKit
+//import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -21,8 +22,24 @@ class ViewController: UIViewController {
                     parameters: nil,
                     progress: nil,
                     success: { (operation: NSURLSessionDataTask,responseObject: AnyObject?) in
+
                         if let responseObject = responseObject {
                             print("Response: " + responseObject.description)
+                        }
+                        /*if let listOfDays = responseObject?["list"] as? [AnyObject] {
+                            if let tomorrow = listOfDays[0] as? [String:AnyObject] {
+                                if let tomorrowsWeather = tomorrow["weather"] as? [AnyObject] {
+                                    if let firstWeatherOfDay = tomorrowsWeather[0] as? [String:AnyObject] {
+                                        if let forecast = firstWeatherOfDay["description"] as? String {
+                                            self.forecastLabel.text = forecast
+                                        }
+                                    }
+                                }
+                            }
+                        } */
+                        let json = JSON(responseObject!)
+                        if let forecast = json["list"][0]["weather"][0]["description"].string {
+                            self.forecastLabel.text = forecast
                         }
             },
                     failure: { (operation: NSURLSessionDataTask?,error: NSError) in
